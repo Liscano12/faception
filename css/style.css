@@ -1,0 +1,88 @@
+.btn-primary {
+    background-color: #3671bf;
+}
+
+#offwhite{
+    Background: rgb(225,225,225);
+}
+#white{
+    Background: rgb(255,255,255);
+}
+#lightgray{
+    Background: rgb(190,190,190);
+}
+
+.dark-icon {
+    filter: invert(1) grayscale(100);
+}
+
+.accordion-container {
+    max-height: 1fr;
+}
+
+.optionsbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.galerie{
+    flex-grow: 1;
+}
+.infopage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*Radio buttons*/
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.muster1{background-image:url(../img/gui/muster/muster1.bmp);}
+.muster2{background-image:url(../img/gui/muster/muster2.bmp);}
+.muster3{background-image:url(../img/gui/muster/muster3.bmp);}
+
+.color_white{background-image:url(../img/gui/muster/bg_white.bmp);}
+.color_offwhite{background-image:url(../img/gui/muster/bg_offwhite.bmp);}
+.color_lightgray{background-image:url(../img/gui/muster/bg_lightgrey.bmp);}
+
+.cc-selector input:active +.drinkcard-cc{opacity: 1;}
+.cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+            border: 4px solid #3671bf;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    display:inline-block;
+    border: 2px solid #383838;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    -webkit-transition: all 100ms ease-in;
+        -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+        -webkit-filter: brightness(1.0) grayscale(1) opacity(1);
+        -moz-filter: brightness(1.0) grayscale(1) opacity(1);
+            filter: brightness(1.0) grayscale(1) opacity(1);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.0) grayscale(1) opacity(1);
+       -moz-filter: brightness(1.0) grayscale(1) opacity(1);
+            filter: brightness(1.0) grayscale(1) opacity(1);
+}
+
+
+@include media-breakpoint-only(xs) {
+.galerieWindow{
+    align-self: top;
+}
+}
